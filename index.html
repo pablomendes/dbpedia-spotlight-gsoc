@@ -186,6 +186,18 @@
             -moz-box-shadow: none;
             
         }
+        .querybutton {
+            float:right;
+            margin: 0.15em 0 0 1em;
+
+        }
+        #query_wrapper {
+            vertical-align: middle;
+        }
+        
+        tr.even td.sorting_1 {
+           background-color: inherit;
+        }
         
     </style>
 </head>
@@ -201,8 +213,11 @@
 <h1>Explore the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> projects with <a href="http://spotlight.dbpedia.org/">DBpedia Spotlight</a></h1>
 
 <h2>1. List your interests: <i>(e.g. Java)</i></h2>
-<input type="text" name="uri"/>
-<input type="button" class="btn" value="create query" onclick="run()" />
+
+<div id="query_wrapper">
+    <input type="button" class="querybutton btn-large btn-primary" value="create query" onclick="run()"  />
+    <input type="text" name="uri" />
+</div>
 <!--input type="button" value="create query" onclick="build()" /-->
 <pre id="query" style="display:none"></pre>
 <br/>
