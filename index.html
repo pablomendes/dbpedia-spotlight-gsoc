@@ -1,0 +1,210 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.autoSuggest.js" type="text/javascript"></script>
+    <script src="js/querier.js" type="text/javascript"></script>
+    <script src="http://datatables.net/release-datatables/media/js/jquery.dataTables.js" type="text/javascript"></script>
+
+    <style type="text/css" title="currentStyle">
+        @import "css/demo_page.css";
+        @import "css/demo_table.css";
+        @import "css/header.ccss";
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/autoSuggest.css" />
+    <script>
+        var settings = {
+            'endpoint' : 'http://spotlight.dbpedia.org/sparql/',
+            'default-graph-uri' : '' //'http://dbpedia.org/links',
+        };
+
+        $(document).ready(function() {
+            $(function(){
+                $("input[type=text]").autoSuggest("http://spotlight.dbpedia.org/gsoc/lookup.php",
+                        {minChars: 2, matchCase: false, queryParam: "QueryString",selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords..." });
+            });
+        })
+        //$("input").autoSuggest(data.items, {selectedItemProp: "URI", searchObjProps: "Label", startText: "Enter keywords" });
+
+        function expand() {
+
+            $('.as-original > .as-values').each(function(i,e) {
+                $(e.value.split(",")).each(function (j,entity) {
+                    if (entity!="") {
+                        var uri = entity.replace("http://dbpedia.org/resource/","");
+                        var url = "http://spotlight.dbpedia.org/related/?uri="+uri;
+                        $.ajax(url, {'context': this,
+                            'success': suggest
+                        })
+                    }
+                });
+            });
+            run();
+        }
+
+        function uriToLabel(uri) {
+            return decodeURIComponent(uri).replace(/_/g, " ");
+        }
+
+        function suggest(content) {
+            var suggestions = content.split(" ");
+            var values = suggestions.map(function(e) { return "http://dbpedia.org/resource/"+e; }).join(",");
+            var hidden = '<input class="as-values" type="hidden" value="'+values+'">';
+
+            var header = '<ul class="as-expansions">';
+            var body = [];
+            $(suggestions).each(function (i,e) {
+                body.push('<li class="as-selection-item selected">'+uriToLabel(e)+'</li>');
+            });
+            var footer = "</ul>";
+            $("#expansion").append(hidden+header+body.join("\n")+footer);
+        }
+
+        function build() {
+            var header = "select distinct ?key ?linkId ?name ?project where { ?project <http://spotlight.dbpedia.org/gsoc/vocab#key> ?key; "+
+                    "<http://spotlight.dbpedia.org/gsoc/vocab#name> ?name; " +
+                    "<http://spotlight.dbpedia.org/gsoc/vocab#linkId> ?linkId .";
+
+            var body = [];
+            $('.as-values').each(function(i,e) {
+                $(e.value.split(",")).each(function (j,entity) {
+                    if (entity!="") { body.push("{?project <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <"+ entity +"> . }"); }
+                });
+            });
+
+            var footer = "} limit 100";
+            var sparql = header + body.join("  union  ") + footer;
+            $("#expansion").text("Click in 'expand' to obtain related topic suggestions.");
+            $('#query' ).text(sparql);
+        }
+
+        function getUrl(sparql) {
+            var query = settings.endpoint +
+                    "?default-graph-uri="+encodeURIComponent(settings["default-graph-uri"]) +
+                    "&query="+escape(sparql) +
+                    "&format=json";
+            //console.log(query);
+            return query;
+        }
+
+        // json is returned from the Ajax call
+        function update(json) {
+
+            //console.log(json);
+
+            var header = "<table id='results'><thead>";
+            $.each(json.head.vars, function (index,v) {
+                header += "<th>"+v+"</th>";
+            });
+            header += "</thead>";
+
+            var body = "<tbody>";
+            $.each(json.results.bindings, function(index, element) {
+                body += "<tr>";
+                $.each(json.head.vars, function (vIndex,v) {
+                    var t = element[v].value
+                    if (t.match(/^(http|https):\/\//)) {
+                      t = '<a href="'+t+'">'+t+'</a>';
+                    } else if (t.match(/^google\//)) {
+                      t = '<a href="http://www.google-melange.com/gsoc/org/'+t+'">'+t+'</a>';
+
+                    }
+                    body += "<td>"+t+"</td>";
+                });
+                body += "</tr>";
+            });
+            body += "</tbody>";
+
+            // insert a table
+            $('#view').html(header+body);
+
+            $('#results').dataTable();
+
+        }
+
+
+        function sparql() {
+            //var q = "select distinct * where { ?Concept foaf:name ?name .  {  ?Concept rdf:type dbpedia-owl:Organisation .  }   union   {  ?Concept rdf:type dbpedia-owl:Person .  } } limit 5";
+            var q = $("#query").text();
+            //console.log(q);
+            var url = getUrl(q);
+            //console.log(url)
+
+            $.ajax(url, {'headers': {'Accept': 'application/sparql-results+json'},
+                'context': this,
+                'success': update
+            });
+
+            return q;
+        }
+
+        function run() {
+            build();
+            sparql();
+        }
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29859728-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+<h1>Explore the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> projects with <a href="http://spotlight.dbpedia.org/">DBpedia Spotlight</a></h1>
+
+<h2>1. List your interests: <i>(e.g. Java)</i></h2>
+<input type="text" name="uri"/>
+<input type="button" value="create query" onclick="run()" />
+<!--input type="button" value="create query" onclick="build()" /-->
+<pre id="query" style="display:none"></pre>
+<br/>
+
+<h2>2. Care to expand that a bit? We have a few suggestions.</h2>
+<div id="expansion">List your interests above, and we'll find related concepts.</div>
+<input type="button" value="expand" onclick="expand();" />
+<br/>
+
+<h2>3. Explore.</h2>
+<div id="view">No results yet. Please tell us what are your interests.</div>
+<!--input type="button" value="populate" onclick="sparql()" /-->
+<br/>
+
+<h2>4. Wanna know how this has been done?</h2>
+<div id="explanation">
+    Hang in there. We are writing a nice explanation. Meanwhile, here is the quick and dirty rundown:
+    <ol>
+        <li>Type-ahead suggestion is done via <a href="http://lookup.dbpedia.org">DBpedia Lookup</a>.</li>
+        <li>Suggestion of related concepts is done via <a href="http://wiki.dbpedia.org/Downloads37#wikipediapagelinks">DBpedia's wikiPageLinks</a> and using DBpedia Spotlight's notion of resource similarity.</li>
+        <li>Retrieval of projects is done via a <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL query</a> over annotated projects.</li>
+        Projects were annotated with <a href="http://wiki.dbpedia.org/spotlight/usersmanual">DBpedia Spotlight's Web Service</a>.
+        The resulting data was loaded to Virtuoso triple store, alongside wikiPageLinks dataset of DBpedia.</li>
+    </ol>
+    <p>Chat with us on Freenode's #dbpedia-spotlight, or through our <a href="https://lists.sourceforge.net/lists/listinfo/dbp-spotlight-users">discussion list at SourceForge.net</a></p>
+<p>Coming soon: <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">GSoC 2012 projects</a>!</p>
+</div>
+<div id="stats">
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone annotation="inline"></g:plusone>
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Explore Google Summer of Code 2011 Projects" data-via="pablomendes" data-hashtags="gsoc">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+</body>
+
+</html>
