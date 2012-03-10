@@ -92,7 +92,7 @@
 
             //console.log(json);
 
-            var header = "<table id='results'><thead>";
+            var header = "<table id='results' class='table table-bordered table-striped'><thead>";
             $.each(json.head.vars, function (index,v) {
                 header += "<th>"+v+"</th>";
             });
@@ -156,20 +156,53 @@
         })();
 
     </script>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+    
+    <style type="text/css" media="screen">
+        #banner {
+            background: url('images/bg_gsoc.jpg') #bee6f2 repeat-x;
+            text-align: center;
+            border-bottom: 2px solid #69a3b4;
+            -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            margin-bottom: 3em;
+            height: 323px;
+        }
+        h1 {
+           margin-bottom: 0.5em;
+        }
+        h2 {
+           margin-top: 0.5em;
+        }
+        #results_length {
+            float: right;
+        }
+        
+    </style>
 </head>
 <body>
+    
+    <div id="banner">
+        <img src="images/logo_gsoc.jpg" /> 
+     </div>
+
+     <div class="container">  
+    
+    
 <h1>Explore the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> projects with <a href="http://spotlight.dbpedia.org/">DBpedia Spotlight</a></h1>
 
 <h2>1. List your interests: <i>(e.g. Java)</i></h2>
 <input type="text" name="uri"/>
-<input type="button" value="create query" onclick="run()" />
+<input type="button" class="btn" value="create query" onclick="run()" />
 <!--input type="button" value="create query" onclick="build()" /-->
 <pre id="query" style="display:none"></pre>
 <br/>
 
 <h2>2. Care to expand that a bit? We have a few suggestions.</h2>
 <div id="expansion">List your interests above, and we'll find related concepts.</div>
-<input type="button" value="expand" onclick="expand();" />
+<input type="button" class="btn" value="expand" onclick="expand();" />
 <br/>
 
 <h2>3. Explore.</h2>
@@ -205,6 +238,9 @@
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-text="Explore Google Summer of Code 2011 Projects" data-via="pablomendes" data-hashtags="gsoc">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+
+</div>
+
 </body>
 
 </html>
