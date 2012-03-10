@@ -92,12 +92,16 @@
 
             //console.log(json);
 
+            if (json.head == undefined) {
+                json = $.parseJSON(json);
+            }
+
             var header = "<table id='results' class='table table-bordered table-striped'><thead>";
             $.each(json.head.vars, function (index,v) {
                 header += "<th>"+v+"</th>";
             });
             header += "</thead>";
-
+            
             var body = "<tbody>";
             $.each(json.results.bindings, function(index, element) {
                 body += "<tr>";
