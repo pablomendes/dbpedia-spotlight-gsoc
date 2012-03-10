@@ -94,12 +94,16 @@
 
             //console.log(json);
 
+            if (json.head == undefined) {
+                json = $.parseJSON(json);
+            }
+
             var header = "<table id='results' class='table table-bordered table-striped'><thead>";
             $.each(json.head.vars, function (index,v) {
                 header += "<th>"+v+"</th>";
             });
             header += "</thead>";
-
+            
             var body = "<tbody>";
             $.each(json.results.bindings, function(index, element) {
                 body += "<tr>";
@@ -178,8 +182,9 @@
         h2 {
            margin-top: 0.5em;
         }
-        #results_length {
-            float: right;
+
+        #results_filter input, #results_length select {
+            display: inline;
         }
         
         .as-selections input {
@@ -187,6 +192,18 @@
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
             
+        }
+        .querybutton {
+            float:right;
+            margin: 0.15em 0 0 1em;
+
+        }
+        #query_wrapper {
+            vertical-align: middle;
+        }
+        
+        tr.even td.sorting_1 {
+           background-color: inherit;
         }
         
     </style>
@@ -203,8 +220,11 @@
 <h1>Explore the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> projects with <a href="http://spotlight.dbpedia.org/">DBpedia Spotlight</a></h1>
 <div>Please note that we are not connected with the Google Summer of Code (GSoC) nor affiliated with Google Inc. in any way. This website was created merely with the purpose of illustrating our technology with GSoC data. We do not guarantee the correctness of the information here. For official information about GSoC, please go to the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> or <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">GSoC2012</a> websites.</div>
 <h2>1. List your interests: <i>(e.g. Java)</i></h2>
-<input type="text" name="uri"/>
-<input type="button" class="btn" value="create query" onclick="run()" />
+
+<div id="query_wrapper">
+    <input type="button" class="querybutton btn-large btn-primary" value="create query" onclick="run()"  />
+    <input type="text" name="uri" />
+</div>
 <!--input type="button" value="create query" onclick="build()" /-->
 <pre id="query" style="display:none"></pre>
 <br/>
