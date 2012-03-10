@@ -199,7 +199,7 @@
     
     
 <h1>Explore the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> projects with <a href="http://spotlight.dbpedia.org/">DBpedia Spotlight</a></h1>
-
+<div>Please note that we are not connected with the Google Summer of Code (GSoC) nor affiliated with Google Inc. in any way. This website was created merely with the purpose of illustrating our technology with GSoC data. We do not guarantee the correctness of the information here. For official information about GSoC, please go to the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> or <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">GSoC2012</a> websites.</div>
 <h2>1. List your interests: <i>(e.g. Java)</i></h2>
 <input type="text" name="uri"/>
 <input type="button" class="btn" value="create query" onclick="run()" />
@@ -219,16 +219,18 @@
 
 <h2>4. Wanna know how this has been done?</h2>
 <div id="explanation">
-    Hang in there. We are writing a nice explanation. Meanwhile, here is the quick and dirty rundown:
+
+<p>If you are curious about how we implemented this app, feel free to check our <a href="https://github.com/pablomendes/dbpedia-spotlight-gsoc">source code</a>.  
     <ol>
-        <li>Type-ahead suggestion is done via <a href="http://lookup.dbpedia.org">DBpedia Lookup</a>.</li>
-        <li>Suggestion of related concepts is done via <a href="http://wiki.dbpedia.org/Downloads37#wikipediapagelinks">DBpedia's wikiPageLinks</a> and using DBpedia Spotlight's notion of resource similarity.</li>
-        <li>Retrieval of projects is done via a <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL query</a> over annotated projects.</li>
-        Projects were annotated with <a href="http://wiki.dbpedia.org/spotlight/usersmanual">DBpedia Spotlight's Web Service</a>.
-        The resulting data was loaded to Virtuoso triple store, alongside wikiPageLinks dataset of DBpedia.</li>
-    </ol>
-    <p>Chat with us on Freenode's #dbpedia-spotlight, or through our <a href="https://lists.sourceforge.net/lists/listinfo/dbp-spotlight-users">discussion list at SourceForge.net</a></p>
-<p>Coming soon: <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">GSoC 2012 projects</a>!</p>
+<li>Type-ahead suggestion is done via <a href="http://lookup.dbpedia.org/">DBpedia Lookup</a>. This API takes in some phrase and searches the <a href="http://dbpedia.org">DBpedia</a> knowledge base to find possible meanings for this phrase. The client side javascript uses <a href="http://code.drewwilson.com/entry/autosuggest-jquery-plugin">AutoSuggest jQuery Plugin by Drew Wilson</a>.
+<li>Suggestion of related concepts is done via <a href="http://wiki.dbpedia.org/Downloads37#wikipediapagelinks">DBpedia's wikiPageLinks</a> and using DBpedia Spotlight's notion of resource relatedness.
+<li>Retrieval of projects is done via a <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL query</a> over annotated projects. Projects were annotated with <a href="http://wiki.dbpedia.org/spotlight/usersmanual">DBpedia Spotlight's Web Service</a>. The resulting data was loaded to Virtuoso triple store, alongside wikiPageLinks dataset of <a href="http://dbpedia.org">DBpedia</a>.
+<li>Results are displayed by the <a href="http://datatables.net/">DataTables jQuery plugin</a>.
+   </ol>
+
+<p>We have <a href="http://wiki.dbpedia.org/gsoc2012/">applied</a> for GSoC2012. Selected proposals will be announced on March 16th. One way or another, if you have <a href="http://wiki.dbpedia.org/gsoc2012/ideas">project ideas</a> involving DBpedia Spotlight, please let us know. Chat with us on Freenode's #dbpedia-spotlight, or through our <a href="https://lists.sourceforge.net/lists/listinfo/dbp-spotlight-users">discussion list at SourceForge.net</a>.</p>
+
+<p>Coming soon: <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">GSoC 2012 project data</a>!</p>
 </div>
 <div id="stats">
 <!-- Place this tag where you want the +1 button to render -->
