@@ -12,6 +12,7 @@
     </style>
     <style>
         #copyright { font-size: 9px; text-align: center}
+        #nHits { display: inline; width: 30px;  }
     </style>
     <link rel="stylesheet" type="text/css" href="css/autoSuggest.css" />
     <script>
@@ -22,7 +23,7 @@
 
         $(document).ready(function() {
             $(function(){
-                $("input[type=text]").autoSuggest("http://spotlight.dbpedia.org/gsoc/lookup.php",
+                $("#keywords").autoSuggest("http://spotlight.dbpedia.org/gsoc/lookup.php",
                         {minChars: 2, matchCase: false, queryParam: "QueryString",selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords..." });
             });
         })
@@ -39,12 +40,10 @@
                 });
             });
 
-            var url = "http://localhost:2223/related/?uri="+encodeURIComponent(uriList.join(" "));
-
-            $.ajax(url, {'context': this,
-                'success': suggest,
-                'error': failure
-            })
+            var url = "http://spotlight.dbpedia.org/related/";
+            var data = {"uri": uriList.join(" "),
+                        "n": 20 }
+            $.get(url, data, suggest, "json")
         }
 
         function failure(content) {
@@ -56,10 +55,11 @@
         }
 
         function suggest(content) {
-
+            //var nHits = $("#nHits").val();
+            var nHits = 20;
             var suggestions = content.sort(function(a, b) {
                 return b[1] - a[1];
-            }).slice(0,10);
+            }).slice(0,nHits);
             var values = suggestions.map(function(e) { return "http://dbpedia.org/resource/"+e; }).join(",");
             var hidden = '<input class="as-values" type="hidden" value="'+values+'">';
             var header = '<ul class="as-expansions">';
@@ -142,18 +142,22 @@
 
 
         function sparql() {
-            //var q = "select distinct * where { ?Concept foaf:name ?name .  {  ?Concept rdf:type dbpedia-owl:Organisation .  }   union   {  ?Concept rdf:type dbpedia-owl:Person .  } } limit 5";
-            var q = $("#query").text();
-            //console.log(q);
-            var url = getUrl(q);
-            //console.log(url)
 
-            $.ajax(url, {'headers': {'Accept': 'application/sparql-results+json'},
-                'context': this,
-                'success': update
+            var sparqlQuery = $("#query").text();
+
+            var data =  { "default-graph-uri": settings["default-graph-uri"],
+                          "query": sparqlQuery,
+                          "format": "json" };
+
+            $.ajax({
+                type: 'POST',
+                url: settings.endpoint,
+                data: data,
+                success: update,
+                dataType: "json"
             });
 
-            return q;
+            return sparqlQuery;
         }
 
         function run() {
@@ -235,8 +239,8 @@
 <h2>1. List your interests: <i>(e.g. Java)</i></h2>
 
 <div id="query_wrapper">
-    <input type="button" class="querybutton btn-large btn-primary" value="create query" onclick="run()"  />
-    <input type="text" name="uri" />
+    <input type="button" class="querybutton btn-large btn-primary" value="query" onclick="run()"  />
+    <input id="keywords" type="text" name="uri" />
 </div>
 <!--input type="button" value="create query" onclick="build()" /-->
 <pre id="query" style="display:none"></pre>
@@ -244,7 +248,8 @@
 
 <h2>2. Care to expand that a bit? We have a few suggestions.</h2>
 <div id="expansion">List your interests above, and we'll find related concepts.</div>
-<input type="button" class="btn" value="expand" onclick="expand();" />
+    <input type="button" class="btn" value="expand" onclick="expand();" />
+    <!--label for="nHits">Add <input id="nHits" type="text" value="10" maxlength="2" size="2"/> more results...</label-->
 <br/>
 
 <h2>3. Explore.</h2>
