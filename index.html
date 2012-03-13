@@ -24,7 +24,7 @@
         $(document).ready(function() {
             $(function(){
                 $("#keywords").autoSuggest("http://spotlight.dbpedia.org/gsoc/lookup.php",
-                        {minChars: 2, matchCase: false, queryParam: "QueryString",selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords..." });
+                        {minChars: 2, matchCase: false, queryParam: "QueryString", selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords...", emptyText: "No topics found for that phrase." });
             });
         })
         //$("input").autoSuggest(data.items, {selectedItemProp: "URI", searchObjProps: "Label", startText: "Enter keywords" });
@@ -136,7 +136,9 @@
             // insert a table
             $('#view').html(header+body);
 
-            $('#results').dataTable();
+            $('#results').dataTable({"oLanguage": {
+      			"sInfoEmpty": "No projects found for those topics. Try clicking on the <a href='javascript:expand()'>expand</a> button or adding more keywords.",
+			"sEmptyTable": "No projects found for those topics. Try clicking on the <a href='javascript:expand()'>expand</a> button or adding more keywords."}});
 
         }
 
@@ -236,7 +238,7 @@
     
 <h1>Explore the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> projects with <a href="http://spotlight.dbpedia.org/">DBpedia Spotlight</a></h1>
 <div>Please note that we are not connected with the Google Summer of Code (GSoC) nor affiliated with Google Inc. in any way. This website was created merely with the purpose of illustrating our technology with GSoC data. We do not guarantee the correctness of the information here. For official information about GSoC, please go to the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> or <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012">GSoC2012</a> websites.</div>
-<h2>1. List your interests: <i>(e.g. Java)</i></h2>
+<h2>1. List your interests: (try '<i>Cloud computing</i>' or '<i>Java</i>')</h2>
 
 <div id="query_wrapper">
     <input type="button" class="querybutton btn-large btn-primary" value="query" onclick="run()"  />
@@ -262,9 +264,9 @@
 
 <p>If you are curious about how we implemented this app, feel free to check our <a href="https://github.com/pablomendes/dbpedia-spotlight-gsoc">source code</a>.  
     <ol>
-<li>Type-ahead suggestion is done via <a href="http://lookup.dbpedia.org/">DBpedia Lookup</a>. This API takes in some phrase and searches the <a href="http://dbpedia.org">DBpedia</a> knowledge base to find possible meanings for this phrase. The client side javascript uses <a href="http://code.drewwilson.com/entry/autosuggest-jquery-plugin">AutoSuggest jQuery Plugin by Drew Wilson</a>.
-<li>Suggestion of related concepts is done via <a href="http://wiki.dbpedia.org/Downloads37#wikipediapagelinks">DBpedia's wikiPageLinks</a> and using DBpedia Spotlight's notion of resource relatedness.
-<li>Retrieval of projects is done via a <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL query</a> over annotated projects. Projects were annotated with <a href="http://wiki.dbpedia.org/spotlight/usersmanual">DBpedia Spotlight's Web Service</a>. The resulting data was loaded to Virtuoso triple store, alongside wikiPageLinks dataset of <a href="http://dbpedia.org">DBpedia</a>.
+<li>Type-ahead suggestion is done via <a href="http://enable-cors.org">CORS-enabled</a> Ajax queries to <a href="http://lookup.dbpedia.org/">DBpedia Lookup</a>. This API takes in some phrase and searches the <a href="http://dbpedia.org">DBpedia</a> knowledge base to find possible meanings for this phrase. Once you pick one of those meanings, we store its unique identifier (URI) from DBpedia. The client side javascript uses <a href="http://code.drewwilson.com/entry/autosuggest-jquery-plugin">AutoSuggest jQuery Plugin by Drew Wilson</a>.
+<li>Suggestion of related concepts is done via <a href="http://wiki.dbpedia.org/Downloads37#wikipediapagelinks">DBpedia's wikiPageLinks</a> and using <a href="http://wiki.dbpedia.org/spotlight/isem2011">DBpedia Spotlight's notion of resource relatedness</a>. For each of the URIs you have selected in step 1, we find all concepts linked to them via DBpedia properties. We add to that any other concepts that are "topically similar" according to DBpedia Spotlight.
+<li>Retrieval of projects is done via a <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL query</a> over annotated projects stored in our <a href="http://spotlight.dbpedia.org/sparql">SPARQL endpoint</a>. Projects were annotated with <a href="http://wiki.dbpedia.org/spotlight/usersmanual">DBpedia Spotlight's Web Service</a>. The resulting data was loaded to <a href="http://virtuoso.openlinksw.com">Virtuoso triple store</a>, alongside wikiPageLinks dataset of <a href="http://dbpedia.org">DBpedia</a>.
 <li>Results are displayed by the <a href="http://datatables.net/">DataTables jQuery plugin</a>.
    </ol>
 
