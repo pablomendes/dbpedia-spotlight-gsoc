@@ -26,6 +26,10 @@
                 $("#keywords").autoSuggest("http://spotlight.dbpedia.org/gsoc/lookup.php",
                         {minChars: 2, matchCase: false, queryParam: "QueryString", selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords...", emptyText: "No topics found for that phrase." });
             });
+            var url = "http://spotlight.dbpedia.org/sparql/";
+            var data = {"query":"select * { ?s ?p ?o } limit 5"};
+            $.get(url, data, function(){ $(".warning").hide(); console.log("hide"); }, "json").error(function() { $(".warning").show(); console.log("show"); });
+
         })
         //$("input").autoSuggest(data.items, {selectedItemProp: "URI", searchObjProps: "Label", startText: "Enter keywords" });
 
@@ -210,12 +214,10 @@
             box-shadow: none;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
-            
         }
         .querybutton {
             float:right;
             margin: 0.15em 0 0 1em;
-
         }
         #query_wrapper {
             vertical-align: middle;
@@ -223,6 +225,38 @@
         
         tr.even td.sorting_1 {
            background-color: inherit;
+        }
+        /* below from http://css.dzone.com/news/css-message-boxes-different-me */
+        .info, .success, .warning, .error, .validation {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:13px;
+            width: 880px;
+            align: center;
+            border: 1px solid;
+            margin: 10px auto 20px;
+            padding:15px 10px 15px 50px;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+        }
+        .info {
+            color: #00529B;
+            background-color: #BDE5F8;
+            background-image: url('images/info.png');
+        }
+        .success {
+            color: #4F8A10;
+            background-color: #DFF2BF;
+            background-image:url('images/success.png');
+        }
+        .warning {
+            color: #9F6000;
+            background-color: #FEEFB3;
+            background-image: url('images/warning.png');
+        }
+        .error {
+            color: #D8000C;
+            background-color: #FFBABA;
+            background-image: url('images/error.png');
         }
         
     </style>
@@ -233,7 +267,9 @@
         <img src="images/logo_gsoc.jpg" /> 
      </div>
 
-     <div class="container">  
+    <div class="warning" style="display: none">We are experiencing technical difficulties with our server. Please check back in a couple of hours.</div>
+
+    <div class="container">
     
     
 <h1>Explore the <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2011">GSoC2011</a> projects with <a href="http://spotlight.dbpedia.org/">DBpedia Spotlight</a></h1>
