@@ -27,8 +27,8 @@
                         {minChars: 2, matchCase: false, queryParam: "QueryString", selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords...", emptyText: "No topics found for that phrase." });
             });
             var url = "http://spotlight.dbpedia.org/sparql/";
-            var data = {"query":"select * { ?s ?p ?o } limit 5"};
-            $.get(url, data, function(){ $(".warning").hide(); console.log("hide"); }, "json").error(function() { $(".warning").show(); console.log("show"); });
+            var data = {"query":"select * { ?s ?p ?o } limit 5","output":"json"};
+            //$.get(url, data, function(){ $(".warning").hide(); console.log("hide"); }, "json").error(function() { $(".warning").show(); console.log("show"); });
 
         })
         //$("input").autoSuggest(data.items, {selectedItemProp: "URI", searchObjProps: "Label", startText: "Enter keywords" });
@@ -98,9 +98,10 @@
 
         function getUrl(sparql) {
             var query = settings.endpoint +
-                    "?default-graph-uri="+encodeURIComponent(settings["default-graph-uri"]) +
+                    //"?default-graph-uri="+encodeURIComponent(settings["default-graph-uri"]) +
                     "&query="+escape(sparql) +
-                    "&format=json";
+                    //"&format=json";
+                    "&output=json";
             //console.log(query);
             return query;
         }
@@ -151,9 +152,10 @@
 
             var sparqlQuery = $("#query").text();
 
-            var data =  { "default-graph-uri": settings["default-graph-uri"],
+            var data =  { //"default-graph-uri": settings["default-graph-uri"],
                           "query": sparqlQuery,
-                          "format": "json" };
+                          //"format": "json" };
+                          "output": "json" };
 
             $.ajax({
                 type: 'POST',
@@ -267,7 +269,7 @@
         <img src="images/logo_gsoc.jpg" /> 
      </div>
 
-    <div class="warning" style="display: none">We are experiencing technical difficulties with our server. Please check back in a couple of hours.</div>
+    <div class="warning" >We are experiencing technical difficulties with our server. Please check back in a couple of hours.</div>
 
     <div class="container">
     
