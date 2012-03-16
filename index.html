@@ -153,9 +153,10 @@
             var sparqlQuery = $("#query").text();
 
             var data =  { //"default-graph-uri": settings["default-graph-uri"],
+                          "graph":"http://gsoc",
                           "query": sparqlQuery,
                           //"format": "json" };
-                          "output": "json" };
+			  "output": "json" };
 
             $.ajax({
                 type: 'POST',
@@ -269,7 +270,7 @@
         <img src="images/logo_gsoc.jpg" /> 
      </div>
 
-    <div class="warning" >We are experiencing technical difficulties with our server. Please check back in a couple of hours.</div>
+    <div class="warning" style="display:none">We are experiencing technical difficulties with our server. Please check back in a couple of hours.</div>
 
     <div class="container">
     
