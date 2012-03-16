@@ -24,7 +24,7 @@
         $(document).ready(function() {
             $(function(){
                 $("#keywords").autoSuggest("http://spotlight.dbpedia.org/gsoc/lookup.php",
-                        {minChars: 2, matchCase: false, queryParam: "QueryString", selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords...", emptyText: "No topics found for that phrase." });
+                        {minChars: 2, matchCase: false, queryParam: "QueryString", selectedItemProp: "Label", searchObjProps: "Label", selectedValuesProp: "URI", startText: "Enter keywords...", emptyText: "No topics found for that phrase.", beforeRetrieve: function(s){return s.replace(/\+/g, "\\\+");} });
             });
             var url = "http://spotlight.dbpedia.org/sparql/";
             var data = {"query":"select * { ?s ?p ?o } limit 5"};
