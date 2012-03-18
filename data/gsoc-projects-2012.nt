@@ -1950,11 +1950,10 @@
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Xapian Search Engine Library"@en .
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/C%2B%2B> .
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/CJK_characters> .
-<http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/C._P._Snow> .
+<http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Web_search_engine> .
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Gmane> .
-<http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Indexing_%28motion%29> .
+<http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Search_engine_indexing> .
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Information_retrieval> .
-<http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Insulin_resistance> .
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Japanese_name> .
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Java_%28programming_language%29> .
 <http://trac.xapian.org/wiki/GSoCProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Korean_language> .
