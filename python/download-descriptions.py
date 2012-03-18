@@ -6,6 +6,9 @@ import re
 import urllib
 import urllib2
 import sys
+import justext
+from django.utils.encoding import smart_str, smart_unicode
+
 
 csvInput = sys.argv[1]
 
@@ -67,7 +70,7 @@ for els in csv.reader(open(csvInput), delimiter=",", quotechar='"'):
     else:
         query = urllib.quote("[[" + "]], [[".join(tags) + "]]")
         url = urlPrefixSpotlight + query
-        sys.stderr.write(url+"\n")
+        #sys.stderr.write(url+"\n")
         request = urllib2.Request(url, headers={"Accept": "application/json"})
         contents = urllib2.urlopen(request).read()
         uris = re.findall('"@URI": "(.*?)",', contents)
@@ -77,19 +80,3 @@ for els in csv.reader(open(csvInput), delimiter=",", quotechar='"'):
         pass
 
 
-
-    """
-
-#############################################
-# download web pages
-    if ideasHtml.strip():
-        p = "output/"+linkId
-        if os.path.exists(p):
-            continue
-        sys.stderr.write(ideasHtml+"\n")
-        try: 
-            html = urllib2.urlopen(ideasHtml).read()
-            open(p, "w").write(ideasHtml+"\n"+html)
-        except urllib2.HTTPError:
-            sys.stderr.write("404!!!!!!!!!!!!!!!!!!\n")
-    """
