@@ -1915,6 +1915,7 @@
 <https://www.torproject.org/about/gsoc.html> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Electronic Frontier Foundation/The Tor Project"@en .
 <https://www.torproject.org/about/gsoc.html> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/ANTI-> .
 <https://www.torproject.org/about/gsoc.html> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/C%2B%2B> .
+<https://www.torproject.org/about/gsoc.html> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Tor_%28anonymity_network%29> .
 <https://www.torproject.org/about/gsoc.html> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Censorship> .
 <https://www.torproject.org/about/gsoc.html> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Computer_security> .
 <https://www.torproject.org/about/gsoc.html> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Internet_privacy> .
@@ -1994,6 +1995,7 @@
 <http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Java_%28programming_language%29> .
 <http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Machine_translation> .
 <http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Natural_language_processing> .
+<http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Apertium> .
 <http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c++"@en .
 <http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "java"@en .
 <http://wiki.apertium.org/wiki/Ideas_for_Google_Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "machine translation"@en .
@@ -3285,6 +3287,7 @@
 <http://www.silverstripe.org/google-summer-of-code-2012-project-ideas/> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "silverstripe"@en .
 <http://www.silverstripe.org/google-summer-of-code-2012-project-ideas/> <http://spotlight.dbpedia.org/gsoc/vocab#name> "SilverStripe"@en .
 <http://www.silverstripe.org/google-summer-of-code-2012-project-ideas/> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/ASP.NET_MVC_Framework> .
+<http://www.silverstripe.org/google-summer-of-code-2012-project-ideas/> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/SilverStripe> .
 <http://www.silverstripe.org/google-summer-of-code-2012-project-ideas/> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Content_management_system> .
 <http://www.silverstripe.org/google-summer-of-code-2012-project-ideas/> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/HTML5> .
 <http://www.silverstripe.org/google-summer-of-code-2012-project-ideas/> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/JavaScript> .
