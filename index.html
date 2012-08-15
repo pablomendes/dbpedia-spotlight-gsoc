@@ -61,15 +61,16 @@
         function suggest(content) {
             //var nHits = $("#nHits").val();
             var nHits = 20;
+            console.log(content);
             var suggestions = content.sort(function(a, b) {
-                return b[1] - a[1];
+                return b[Object.keys(b)] - a[Object.keys(a)];
             }).slice(0,nHits);
-            var values = suggestions.map(function(e) { return "http://dbpedia.org/resource/"+e; }).join(",");
+            var values = suggestions.map(function(e) {  return "http://dbpedia.org/resource/"+Object.keys(e); }).join(",");
             var hidden = '<input class="as-values" type="hidden" value="'+values+'">';
             var header = '<ul class="as-expansions">';
             var body = [];
             $(suggestions).each(function (i,e) {
-                body.push('<li class="as-selection-item selected">'+uriToLabel(e[0])+'</li>');
+                body.push('<li class="as-selection-item selected">'+uriToLabel(Object.keys(e))+'</li>');
             });
             var footer = "</ul>";
 
