@@ -1,3 +1,6 @@
+
+## Client Side
+
 This is the source code for the little app we created that allows people to browse Google Summer of Code (GSoC) projects.
 
 <p>If you are curious about how we implemented this app, feel free to check our <a href="https://github.com/pablomendes/dbpedia-spotlight-gsoc">source code</a>.
