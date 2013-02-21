@@ -13,9 +13,13 @@ This demo relies on three Web services.
 
 ### DBpedia Lookup
 
-http://lookup.dbpedia.org
+[DBpedia Lookup](http://lookup.dbpedia.org) returns tags in the DBpedia knowledge base that match some string. For example, the query below searches for everything containing Berlin:
+
+    curl "http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?QueryClass=place&QueryString=berlin"
 
 ### DBpedia Spotlight's rel8 ###
+
+DBpedia Spotlight models DBpedia "tags" based on their distributional similarity. Therefore we can use their service to give us related tags.
 
 Testing the deployed demo
 
@@ -35,7 +39,11 @@ Using the server
 
 ### SPARQL server ###
 
-We also use a SPARQL endpoint to query data about GSoC projects. So you first need access to a SPARQL server. We will use Apache Jena's Fuseki as an example:
+We also use a SPARQL endpoint to query data about GSoC projects. The command below uses cURL to execute a SPARQL query that retrieves all GSoC projects tagged with the string "css".
+
+    curl http://spotlight.dbpedia.org/sparql/ -d "query=select * where { ?s  <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> \"css\"@en } limit 5"
+
+Please see below how to set up your own SPARQL Server. We will use Apache Jena's Fuseki as an example:
 
 http://jena.apache.org/documentation/serving_data/index.html#download-fuseki
 
@@ -48,15 +56,13 @@ Start Fuseki:
 
     ./fuseki-server --update --mem /gsoc
 
-Load data into the server:
+Load the data you just dowloaded into the server:
 
-    ./s-put http://localhost:3030/gsoc/data default Data/gsoc-projects-2011.nt
-    ./s-put http://localhost:3030/gsoc/data default Data/gsoc-projects-2012.nt    
+    ./s-put http://localhost:3030/gsoc/data default gsoc-projects-2011.nt
+    ./s-put http://localhost:3030/gsoc/data default gsoc-projects-2012.nt    
     
-The command below uses cURL to execute a SPARQL query that retrieves all GSoC projects tagged with the string "css".
+Now you should see if your deployment is working:
 
-    http://localhost:3030/gsoc/query
+     curl http://localhost:3030/gsoc/query -d "query=select * where { ?s  <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> \"css\"@en } limit 5"
+
     
-You can try that also with our public endpoint.
-
-    curl http://spotlight.dbpedia.org/sparql/ -d "query=select * where { ?s  <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> \"css\"@en } limit 5"
