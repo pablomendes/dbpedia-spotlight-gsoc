@@ -1,4 +1,3 @@
-
 This is the source code for the little app we created that allows people to browse Google Summer of Code (GSoC) projects.
 
 <p>If you are curious about how we implemented this app, feel free to check our <a href="https://github.com/pablomendes/dbpedia-spotlight-gsoc">source code</a>.
@@ -8,3 +7,35 @@ This is the source code for the little app we created that allows people to brow
 
 <p>DBpedia Spotlight <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/dbpediaspotlight">has been selected as an organization</a> for GSoC2012. If you have <a href="http://wiki.dbpedia.org/gsoc2012/ideas">project ideas</a> involving DBpedia Spotlight, please let us know. Chat with us on Freenode's #dbpedia-spotlight, or through our <a href="https://lists.sourceforge.net/lists/listinfo/dbp-spotlight-developers">discussion list at SourceForge.net</a>.</p>
 
+## Server Side
+
+This demo relies on three Web services.
+
+### DBpedia Lookup
+
+
+### DBpedia Spotlight's rel8 ###
+
+Testing the deployed demo
+
+     curl -H "application/json" "http://spotlight.dbpedia.org/related/?uri=Berlin"
+
+Getting the code 
+
+    https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki/Installation
+    
+Starting the server
+
+      mvn scala:run -DmainClass="org.dbpedia.spotlight.web.rest.RelatedResources"
+
+Using the server
+
+      curl -H "application/json" "http://localhost:2222/related/?uri=Berlin"
+
+### SPARQL server ###
+
+Using the sparql endpoint with GSoC projects
+
+The command below uses cURL to execute a SPARQL query that retrieves all GSoC projects tagged with the string "css".
+
+    curl http://spotlight.dbpedia.org/sparql/ -d "query=select * where { ?s  <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> \"css\"@en } limit 5"
