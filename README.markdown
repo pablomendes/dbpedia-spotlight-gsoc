@@ -13,6 +13,7 @@ This demo relies on three Web services.
 
 ### DBpedia Lookup
 
+http://lookup.dbpedia.org
 
 ### DBpedia Spotlight's rel8 ###
 
@@ -34,8 +35,28 @@ Using the server
 
 ### SPARQL server ###
 
-Using the sparql endpoint with GSoC projects
+We also use a SPARQL endpoint to query data about GSoC projects. So you first need access to a SPARQL server. We will use Apache Jena's Fuseki as an example:
 
+http://jena.apache.org/documentation/serving_data/index.html#download-fuseki
+
+Download data:
+
+    wget https://raw.github.com/pablomendes/dbpedia-spotlight-gsoc/master/data/gsoc-projects-2011.nt
+    wget https://raw.github.com/pablomendes/dbpedia-spotlight-gsoc/master/data/gsoc-projects-2012.nt
+
+Start Fuseki:
+
+    ./fuseki-server --update --mem /gsoc
+
+Load data into the server:
+
+    ./s-put http://localhost:3030/gsoc/data default Data/gsoc-projects-2011.nt
+    ./s-put http://localhost:3030/gsoc/data default Data/gsoc-projects-2012.nt    
+    
 The command below uses cURL to execute a SPARQL query that retrieves all GSoC projects tagged with the string "css".
+
+    http://localhost:3030/gsoc/query
+    
+You can try that also with our public endpoint.
 
     curl http://spotlight.dbpedia.org/sparql/ -d "query=select * where { ?s  <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> \"css\"@en } limit 5"
