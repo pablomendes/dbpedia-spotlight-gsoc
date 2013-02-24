@@ -1048,18 +1048,38 @@
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "nescent"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "National Evolutionary Synthesis Center"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/C%2B%2B> .
-<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Evolution_%28TV_series%29> .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Java_%28programming_language%29> .
-<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Neil_Campbell_%28scientist%29> .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Perl> .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Visualization_%28computer_graphics%29> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Evolution> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Evolutionary_biology> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Phylogenetics> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Computational_phylogenetics> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Phylogenetic_comparative_methods> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Bioinformatics> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/R_%28programming_language%29> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/C_%28programming_language%29> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Python_%28programming_language%29> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/JavaScript> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Data_visualization> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Knowledge_extraction> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Biodiversity_informatics> .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Metadata_standards> .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "biology"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c++"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "evolution"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "phylogenetics"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "Java"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "perl"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "R"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "python"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "JavaScript"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "phyloinformatics"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "bioinformatics"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "evolutionary informatics"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "biodiversity informatics"@en .
 <http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "visualization"@en .
+<http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "metadata"@en .
 <http://jikesrvm.org/Google+Summer+of+Code+2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/jikesrvm"@en .
 <http://jikesrvm.org/Google+Summer+of+Code+2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "jikesrvm"@en .
 <http://jikesrvm.org/Google+Summer+of+Code+2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Jikes RVM"@en .
