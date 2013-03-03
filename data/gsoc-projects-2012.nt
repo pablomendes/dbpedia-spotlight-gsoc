@@ -56,7 +56,6 @@
 <http://boinc.berkeley.edu/trac/wiki/DevProjects> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/boinc"@en .
 <http://boinc.berkeley.edu/trac/wiki/DevProjects> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "boinc"@en .
 <http://boinc.berkeley.edu/trac/wiki/DevProjects> <http://spotlight.dbpedia.org/gsoc/vocab#name> "BOINC project, University of California, Berkeley"@en .
-<http://boinc.berkeley.edu/trac/wiki/DevProjects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://brlcad.org/wiki/Google_Summer_of_Code/Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/brlcad"@en .
 <http://brlcad.org/wiki/Google_Summer_of_Code/Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "brlcad"@en .
 <http://brlcad.org/wiki/Google_Summer_of_Code/Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "BRL-CAD"@en .
@@ -153,7 +152,6 @@
 <http://code.google.com/p/google-summer-of-code-2012-tux4kids/wiki/IdeasList> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/tux4kids"@en .
 <http://code.google.com/p/google-summer-of-code-2012-tux4kids/wiki/IdeasList> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "tux4kids"@en .
 <http://code.google.com/p/google-summer-of-code-2012-tux4kids/wiki/IdeasList> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Tux4Kids"@en .
-<http://code.google.com/p/google-summer-of-code-2012-tux4kids/wiki/IdeasList> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://code.google.com/p/liquid-galaxy/wiki/GSoC2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/liquid_galaxy"@en .
 <http://code.google.com/p/liquid-galaxy/wiki/GSoC2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "liquid_galaxy"@en .
 <http://code.google.com/p/liquid-galaxy/wiki/GSoC2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Liquid Galaxy Project"@en .
@@ -191,11 +189,9 @@
 <http://code.google.com/p/openintents/wiki/GSoC2012Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/openintents"@en .
 <http://code.google.com/p/openintents/wiki/GSoC2012Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "openintents"@en .
 <http://code.google.com/p/openintents/wiki/GSoC2012Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "OpenIntents"@en .
-<http://code.google.com/p/openintents/wiki/GSoC2012Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://code.google.com/p/processing/wiki/ProjectList> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/processing"@en .
 <http://code.google.com/p/processing/wiki/ProjectList> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "processing"@en .
 <http://code.google.com/p/processing/wiki/ProjectList> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Processing"@en .
-<http://code.google.com/p/processing/wiki/ProjectList> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://code.google.com/p/reviewboard/wiki/Student_Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/reviewboard"@en .
 <http://code.google.com/p/reviewboard/wiki/Student_Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "reviewboard"@en .
 <http://code.google.com/p/reviewboard/wiki/Student_Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Review Board"@en .
@@ -363,7 +359,6 @@
 <http://dev.geogebra.org/trac/wiki/Gsoc2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/geogebra"@en .
 <http://dev.geogebra.org/trac/wiki/Gsoc2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "geogebra"@en .
 <http://dev.geogebra.org/trac/wiki/Gsoc2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "International GeoGebra Institute"@en .
-<http://dev.geogebra.org/trac/wiki/Gsoc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://dev.umitproject.org/projects/umitproject/wiki/GSoC2012Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/umit"@en .
 <http://dev.umitproject.org/projects/umitproject/wiki/GSoC2012Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "umit"@en .
 <http://dev.umitproject.org/projects/umitproject/wiki/GSoC2012Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Umit Project"@en .
@@ -518,7 +513,6 @@
 <http://docbook.xmlpress.net/tiki-index.php?page=Ideas2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/docbook"@en .
 <http://docbook.xmlpress.net/tiki-index.php?page=Ideas2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "docbook"@en .
 <http://docbook.xmlpress.net/tiki-index.php?page=Ideas2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "DocBook Project"@en .
-<http://docbook.xmlpress.net/tiki-index.php?page=Ideas2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://docs.joomla.org/GSOC_2012_Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/joomla"@en .
 <http://docs.joomla.org/GSOC_2012_Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "joomla"@en .
 <http://docs.joomla.org/GSOC_2012_Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Joomla!"@en .
@@ -820,7 +814,6 @@
 <http://go.openmrs.org/soc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "ehealth"@en .
 <http://go.openmrs.org/soc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "ehr"@en .
 <http://go.openmrs.org/soc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "emr"@en .
-<http://go.openmrs.org/soc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://go.openmrs.org/soc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "global health"@en .
 <http://go.openmrs.org/soc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "healthcare"@en .
 <http://go.openmrs.org/soc2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "health"@en .
@@ -1110,7 +1103,6 @@
 <http://measurementlab.net/gsoc_2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/mlab"@en .
 <http://measurementlab.net/gsoc_2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "mlab"@en .
 <http://measurementlab.net/gsoc_2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Measurement Lab"@en .
-<http://measurementlab.net/gsoc_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/mixxx"@en .
 <http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "mixxx"@en .
 <http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Mixxx DJ Software"@en .
@@ -1253,7 +1245,6 @@
 <http://nrnb.org/gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "cytoscape"@en .
 <http://nrnb.org/gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "database"@en .
 <http://nrnb.org/gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "data"@en .
-<http://nrnb.org/gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://nrnb.org/gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "java"@en .
 <http://nrnb.org/gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "javascript"@en .
 <http://nrnb.org/gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "jquery"@en .
@@ -1377,15 +1368,12 @@
 <http://rwiki.sciviews.org/doku.php?id=developers:projects:gsoc2012&s=gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/rproject"@en .
 <http://rwiki.sciviews.org/doku.php?id=developers:projects:gsoc2012&s=gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "rproject"@en .
 <http://rwiki.sciviews.org/doku.php?id=developers:projects:gsoc2012&s=gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#name> "R project for statistical computing"@en .
-<http://rwiki.sciviews.org/doku.php?id=developers:projects:gsoc2012&s=gsoc> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://s.apache.org/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/apache"@en .
 <http://s.apache.org/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "apache"@en .
 <http://s.apache.org/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Apache Software Foundation"@en .
-<http://s.apache.org/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <https://code.djangoproject.com/wiki/SummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/django"@en .
 <https://code.djangoproject.com/wiki/SummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "django"@en .
 <https://code.djangoproject.com/wiki/SummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Django Software Foundation"@en .
-<https://code.djangoproject.com/wiki/SummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <https://community.jboss.org/wiki/GSOC12Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/jboss"@en .
 <https://community.jboss.org/wiki/GSOC12Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "jboss"@en .
 <https://community.jboss.org/wiki/GSOC12Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "JBoss Community"@en .
@@ -1634,7 +1622,6 @@
 <> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/gospo"@en .
 <> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "gospo"@en .
 <> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Google Open Source Programs Office"@en .
-<> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <https://raxaemr.atlassian.net/wiki/x/GABE> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/raxa"@en .
 <https://raxaemr.atlassian.net/wiki/x/GABE> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "raxa"@en .
 <https://raxaemr.atlassian.net/wiki/x/GABE> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Raxa"@en .
@@ -1654,11 +1641,9 @@
 <https://sites.google.com/a/newvisions.org/robot-secretary-project-hub/project-directory> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/newvisions"@en .
 <https://sites.google.com/a/newvisions.org/robot-secretary-project-hub/project-directory> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "newvisions"@en .
 <https://sites.google.com/a/newvisions.org/robot-secretary-project-hub/project-directory> <http://spotlight.dbpedia.org/gsoc/vocab#name> "New Visions for Public Schools"@en .
-<https://sites.google.com/a/newvisions.org/robot-secretary-project-hub/project-directory> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <https://trac.rhaptos.org/trac/rhaptos/wiki/Google%20Summer%20of%20Code%202012/Projects> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/connexions"@en .
 <https://trac.rhaptos.org/trac/rhaptos/wiki/Google%20Summer%20of%20Code%202012/Projects> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "connexions"@en .
 <https://trac.rhaptos.org/trac/rhaptos/wiki/Google%20Summer%20of%20Code%202012/Projects> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Connexions"@en .
-<https://trac.rhaptos.org/trac/rhaptos/wiki/Google%20Summer%20of%20Code%202012/Projects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://sulab.org/gsoc/> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/scripps_crowdbio"@en .
 <http://sulab.org/gsoc/> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "scripps_crowdbio"@en .
 <http://sulab.org/gsoc/> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Crowdsourcing Biology"@en .
@@ -2520,7 +2505,6 @@
 <http://wiki.ninux.org/GSoCIdeas2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/ninux"@en .
 <http://wiki.ninux.org/GSoCIdeas2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "ninux"@en .
 <http://wiki.ninux.org/GSoCIdeas2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Ninux.org"@en .
-<http://wiki.ninux.org/GSoCIdeas2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://wiki.opencog.org/w/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/opencog"@en .
 <http://wiki.opencog.org/w/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "opencog"@en .
 <http://wiki.opencog.org/w/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "OpenCog Foundation"@en .
@@ -2649,7 +2633,6 @@
 <http://wiki.scilab.org/GSoC_project_proposal> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/scilab"@en .
 <http://wiki.scilab.org/GSoC_project_proposal> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "scilab"@en .
 <http://wiki.scilab.org/GSoC_project_proposal> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Scilab"@en .
-<http://wiki.scilab.org/GSoC_project_proposal> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://wiki.scribus.net/canvas/GSoC_2012_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/scribus"@en .
 <http://wiki.scribus.net/canvas/GSoC_2012_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "scribus"@en .
 <http://wiki.scribus.net/canvas/GSoC_2012_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Scribus"@en .
@@ -2726,7 +2709,6 @@
 <http://wiki.wesnoth.org/SummerOfCodeIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/wesnoth"@en .
 <http://wiki.wesnoth.org/SummerOfCodeIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "wesnoth"@en .
 <http://wiki.wesnoth.org/SummerOfCodeIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Battle For Wesnoth"@en .
-<http://wiki.wesnoth.org/SummerOfCodeIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/wine"@en .
 <http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "wine"@en .
 <http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Wine"@en .
@@ -2759,7 +2741,6 @@
 <http://wiki.xmpp.org/web/Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/xsf"@en .
 <http://wiki.xmpp.org/web/Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "xsf"@en .
 <http://wiki.xmpp.org/web/Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "XMPP Standards Foundation"@en .
-<http://wiki.xmpp.org/web/Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://www.abisource.com/wiki/Google_Summer_of_Code_2012#Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/abiword"@en .
 <http://www.abisource.com/wiki/Google_Summer_of_Code_2012#Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "abiword"@en .
 <http://www.abisource.com/wiki/Google_Summer_of_Code_2012#Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "abiword"@en .
@@ -2883,7 +2864,6 @@
 <http://www.gnu.org/software/soc-projects/ideas-2012.html> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/gnu"@en .
 <http://www.gnu.org/software/soc-projects/ideas-2012.html> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "gnu"@en .
 <http://www.gnu.org/software/soc-projects/ideas-2012.html> <http://spotlight.dbpedia.org/gsoc/vocab#name> "GNU Project"@en .
-<http://www.gnu.org/software/soc-projects/ideas-2012.html> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://www.haiku-os.org/community/gsoc/2012/ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/haiku"@en .
 <http://www.haiku-os.org/community/gsoc/2012/ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "haiku"@en .
 <http://www.haiku-os.org/community/gsoc/2012/ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Haiku"@en .
@@ -3222,7 +3202,6 @@
 <http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/openflowhub"@en .
 <http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "openflowhub"@en .
 <http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#name> "OpenFlowHub"@en .
-<http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <http://www.opennms.org/wiki/Google_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/opennms"@en .
 <http://www.opennms.org/wiki/Google_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "opennms"@en .
 <http://www.opennms.org/wiki/Google_Summer_of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "OpenNMS"@en .
