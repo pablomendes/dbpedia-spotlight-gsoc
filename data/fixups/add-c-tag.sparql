@@ -1,0 +1,7 @@
+PREFIX vocab:    <http://spotlight.dbpedia.org/gsoc/vocab#>
+
+CONSTRUCT { ?page vocab:tagged <http://dbpedia.org/resource/C_%28programming_language%29> . }
+
+WHERE {
+    ?page vocab:taggedString "c"@en .
+}
