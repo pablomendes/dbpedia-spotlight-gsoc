@@ -1642,7 +1642,6 @@
 <https://developers.google.com/open-source/soc/> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/gospo"@en .
 <https://developers.google.com/open-source/soc/> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "gospo"@en .
 <https://developers.google.com/open-source/soc/> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Google Open Source Programs Office"@en .
-<http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> ""@en .
 <https://raxaemr.atlassian.net/wiki/x/GABE> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/raxa"@en .
 <https://raxaemr.atlassian.net/wiki/x/GABE> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "raxa"@en .
 <https://raxaemr.atlassian.net/wiki/x/GABE> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Raxa"@en .
