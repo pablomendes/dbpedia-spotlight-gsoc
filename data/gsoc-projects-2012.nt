@@ -345,21 +345,10 @@
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/pidgin"@en .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "pidgin"@en .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Pidgin, Finch, and libpurple"@en .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/A%2B%2B> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Amazing_Stories> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Awesome_God> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Business> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Edward_Cullen> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Finch_Avenue> .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/GLib> .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/GTK%2B> .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Instant_messaging> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Mouse> .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Pidgin_%28software%29> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Space:_1999> .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "amazing"@en .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "awesome"@en .
-<http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "a+++++ would do business with again"@en .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c"@en .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "finch"@en .
 <http://developer.pidgin.im/wiki/FutureSOCProjects> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "glib"@en .
@@ -1125,7 +1114,13 @@
 <http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/mixxx"@en .
 <http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "mixxx"@en .
 <http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Mixxx DJ Software"@en .
-<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "dj audio multimedia music qt c++ realtime"@en .
+<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "dj"@en .
+<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "audio"@en .
+<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "multimedia"@en .
+<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "music"@en .
+<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "qt"@en .
+<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c++"@en .
+<http://mixxx.org/wiki/doku.php/gsoc2012ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "realtime"@en .
 <http://moinmo.in/GoogleSoc2012/InitialProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/moinmoin"@en .
 <http://moinmo.in/GoogleSoc2012/InitialProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "moinmoin"@en .
 <http://moinmo.in/GoogleSoc2012/InitialProjectIdeas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "MoinMoin Wiki"@en .
@@ -1369,7 +1364,12 @@
 <http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/puppetlabs"@en .
 <http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "puppetlabs"@en .
 <http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Puppet Labs"@en .
-<http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "puppet automation ruby linux sysadmin devops"@en .
+<http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "puppet"@en .
+<http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "automation"@en .
+<http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "ruby"@en .
+<http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "linux"@en .
+<http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "sysadmin"@en .
+<http://projects.puppetlabs.com/projects/puppet/wiki/GSOC12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "devops"@en .
 <http://prowiki.org/wiki4d/wiki.cgi?GSOC_2012_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/dlang"@en .
 <http://prowiki.org/wiki4d/wiki.cgi?GSOC_2012_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "dlang"@en .
 <http://prowiki.org/wiki4d/wiki.cgi?GSOC_2012_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Digital Mars"@en .
@@ -1530,7 +1530,8 @@
 <https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "android"@en .
 <https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "ffi"@en .
 <https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "jni"@en .
-<https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "jruby. jvm"@en .
+<https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "jruby"@en .
+<https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "jvm"@en .
 <https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "kilim"@en .
 <https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "rails"@en .
 <https://github.com/jruby/jruby/wiki/GoogleSummerOfCode2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "ruby"@en .
@@ -1747,7 +1748,21 @@
 <https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/mozilla"@en .
 <https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "mozilla"@en .
 <https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Mozilla"@en .
-<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "mozilla firefox thunderbird C++ python javascript xul html css web calendar instantbird documentation django emscripten"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "mozilla"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "firefox"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "thunderbird"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "C++"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "python"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "javascript"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "xul"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "html"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "css"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "web"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "calendar"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "instantbird"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "documentation"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "django"@en .
+<https://wiki.mozilla.org/Community:SummerOfCode12> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "emscripten"@en .
 <https://www.illumos.org/projects/illumos-gate/wiki/Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/illumos"@en .
 <https://www.illumos.org/projects/illumos-gate/wiki/Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "illumos"@en .
 <https://www.illumos.org/projects/illumos-gate/wiki/Project_Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "illumos"@en .
@@ -2462,11 +2477,29 @@
 <http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/libav"@en .
 <http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "libav"@en .
 <http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Libav"@en .
-<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "multimedia libav video audio streaming H.265 HEVC assembly DTS-HD ALS Opus DNG C"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "multimedia"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "libav"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "video"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "audio"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "streaming"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "H.265"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "HEVC"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "assembly"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "DTS-HD"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "ALS"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "Opus"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "DNG"@en .
+<http://wiki.multimedia.cx/index.php?title=Libav_Summer_Of_Code_2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c"@en .
 <http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/metabrainz"@en .
 <http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "metabrainz"@en .
 <http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#name> "MetaBrainz Foundation Inc."@en .
-<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "music metadata perl python data archive fun"@en .
+<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "music"@en .
+<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "metadata"@en .
+<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "perl"@en .
+<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "python"@en .
+<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "data"@en .
+<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "fun"@en .
+<http://wiki.musicbrainz.org/Development/Summer_of_Code/2012> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "archive"@en .
 <http://wiki.netbsd.org/projects/gsoc/> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/netbsd"@en .
 <http://wiki.netbsd.org/projects/gsoc/> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "netbsd"@en .
 <http://wiki.netbsd.org/projects/gsoc/> <http://spotlight.dbpedia.org/gsoc/vocab#name> "The NetBSD Foundation"@en .
@@ -2577,7 +2610,9 @@
 <http://wiki.phpbb.com/GSoC/2012/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/phpbb"@en .
 <http://wiki.phpbb.com/GSoC/2012/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "phpbb"@en .
 <http://wiki.phpbb.com/GSoC/2012/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "phpBB Ltd."@en .
-<http://wiki.phpbb.com/GSoC/2012/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "forum bulletin board php"@en .
+<http://wiki.phpbb.com/GSoC/2012/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "bulletin board"@en .
+<http://wiki.phpbb.com/GSoC/2012/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "forum"@en .
+<http://wiki.phpbb.com/GSoC/2012/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "php"@en .
 <http://wiki.phpmyadmin.net/pma/GSoC_2012_Ideas_List> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/phpmyadmin"@en .
 <http://wiki.phpmyadmin.net/pma/GSoC_2012_Ideas_List> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "phpmyadmin"@en .
 <http://wiki.phpmyadmin.net/pma/GSoC_2012_Ideas_List> <http://spotlight.dbpedia.org/gsoc/vocab#name> "phpMyAdmin"@en .
@@ -2607,7 +2642,10 @@
 <http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/samba"@en .
 <http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "samba"@en .
 <http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Samba"@en .
-<http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "C SMB CIFS Kernel"@en .
+<http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c"@en .
+<http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "CIFS"@en .
+<http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "SMB"@en .
+<http://wiki.samba.org/index.php/SoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "kernel"@en .
 <http://wiki.scilab.org/GSoC_project_proposal> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/scilab"@en .
 <http://wiki.scilab.org/GSoC_project_proposal> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "scilab"@en .
 <http://wiki.scilab.org/GSoC_project_proposal> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Scilab"@en .
@@ -2692,7 +2730,8 @@
 <http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/wine"@en .
 <http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "wine"@en .
 <http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Wine"@en .
-<http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c lgpl"@en .
+<http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "c"@en .
+<http://wiki.winehq.org/SummerOfCode> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "lgpl"@en .
 <http://wiki.worldforge.org/wiki/Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/worldforge"@en .
 <http://wiki.worldforge.org/wiki/Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "worldforge"@en .
 <http://wiki.worldforge.org/wiki/Summer_of_Code> <http://spotlight.dbpedia.org/gsoc/vocab#name> "WorldForge"@en .
@@ -3173,7 +3212,13 @@
 <http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/openlighting"@en .
 <http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "openlighting"@en .
 <http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Open Lighting Project"@en .
-<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "C++ lighting Python DMX512 RDM control-systems network"@en .
+<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "C++"@en .
+<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "lighting"@en .
+<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "Python"@en .
+<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "DMX512"@en .
+<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "RDM"@en .
+<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "control-systems"@en .
+<http://www.opendmx.net/index.php/OLA_SOC_Ideas_Page> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "network"@en .
 <http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/openflowhub"@en .
 <http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "openflowhub"@en .
 <http://www.openflowhub.org/display/floodlightcontroller/Ideas+for+Projects> <http://spotlight.dbpedia.org/gsoc/vocab#name> "OpenFlowHub"@en .
