@@ -1,4 +1,6 @@
 
+## Client Side
+
 This is the source code for the little app we created that allows people to browse Google Summer of Code (GSoC) projects.
 
 <p>If you are curious about how we implemented this app, feel free to check our <a href="https://github.com/pablomendes/dbpedia-spotlight-gsoc">source code</a>.
@@ -8,3 +10,62 @@ This is the source code for the little app we created that allows people to brow
 
 <p>DBpedia Spotlight <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/dbpediaspotlight">has been selected as an organization</a> for GSoC2012. If you have <a href="http://wiki.dbpedia.org/gsoc2012/ideas">project ideas</a> involving DBpedia Spotlight, please let us know. Chat with us on Freenode's #dbpedia-spotlight, or through our <a href="https://lists.sourceforge.net/lists/listinfo/dbp-spotlight-developers">discussion list at SourceForge.net</a>.</p>
 
+## Server Side
+
+This demo relies on three Web services.
+
+### DBpedia Lookup
+
+[DBpedia Lookup](http://lookup.dbpedia.org) returns tags in the DBpedia knowledge base that match some string. For example, the query below searches for everything containing Berlin:
+
+    curl "http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?QueryClass=place&QueryString=berlin"
+
+### DBpedia Spotlight's rel8 ###
+
+DBpedia Spotlight models DBpedia "tags" based on their distributional similarity. Therefore we can use their service to give us related tags.
+
+Testing the deployed demo
+
+     curl -H "application/json" "http://spotlight.dbpedia.org/related/?uri=Berlin"
+
+Getting the code 
+
+    https://github.com/dbpedia-spotlight/dbpedia-spotlight/wiki/Installation
+    
+Starting the server
+
+      mvn scala:run -DmainClass="org.dbpedia.spotlight.web.rest.RelatedResources"
+
+Using the server
+
+      curl -H "application/json" "http://localhost:2222/related/?uri=Berlin"
+
+### SPARQL server ###
+
+We also use a SPARQL endpoint to query data about GSoC projects. The command below uses cURL to execute a SPARQL query that retrieves all GSoC projects tagged with the string "css".
+
+    curl http://spotlight.dbpedia.org/sparql/ -d "query=select * where { ?s  <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> \"css\"@en } limit 5"
+
+Please see below how to set up your own SPARQL Server. We will use Apache Jena's Fuseki as an example:
+
+http://jena.apache.org/documentation/serving_data/index.html#download-fuseki
+
+Download data:
+
+    wget https://raw.github.com/pablomendes/dbpedia-spotlight-gsoc/master/data/gsoc-projects-2011.nt
+    wget https://raw.github.com/pablomendes/dbpedia-spotlight-gsoc/master/data/gsoc-projects-2012.nt
+
+Start Fuseki:
+
+    ./fuseki-server --update --mem /gsoc
+
+Load the data you just dowloaded into the server:
+
+    ./s-put http://localhost:3030/gsoc/data default gsoc-projects-2011.nt
+    ./s-put http://localhost:3030/gsoc/data default gsoc-projects-2012.nt    
+    
+Now you should see if your deployment is working:
+
+     curl http://localhost:3030/gsoc/query -d "query=select * where { ?s  <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> \"css\"@en } limit 5"
+
+    
