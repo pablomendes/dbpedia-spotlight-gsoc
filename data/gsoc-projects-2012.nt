@@ -1352,7 +1352,7 @@
 <http://openwall.info/wiki/ideas> <http://spotlight.dbpedia.org/gsoc/vocab#taggedString> "virtualization"@en .
 <http://orange.biolab.si/trac/wiki/GSoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#key> "google/gsoc2012/orange"@en .
 <http://orange.biolab.si/trac/wiki/GSoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#linkId> "orange"@en .
-<http://orange.biolab.si/trac/wiki/GSoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Orange  Data Mining Fruitful & Fun"@en .
+<http://orange.biolab.si/trac/wiki/GSoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#name> "Orange \u0096 Data Mining Fruitful & Fun"@en .
 <http://orange.biolab.si/trac/wiki/GSoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Artificial_intelligence> .
 <http://orange.biolab.si/trac/wiki/GSoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Bioinformatics> .
 <http://orange.biolab.si/trac/wiki/GSoC/Ideas> <http://spotlight.dbpedia.org/gsoc/vocab#tagged> <http://dbpedia.org/resource/Data_mining> .
